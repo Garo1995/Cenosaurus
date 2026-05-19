@@ -1,0 +1,146 @@
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 991;
+    padding: 20px 0 0;
+}
+.nav-menu ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+.nav-menu a{
+    white-space: nowrap;
+}
+.entrance-flex{
+    gap: 40px;
+}
+
+
+
+.open-menu{
+    display: none;
+}
+.close-menu {
+    display: none;
+}
+.close-menu span {
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: relative;
+
+}
+
+.close-menu span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 3px;
+    position: relative;
+}
+.close-menu span:nth-child(2) {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: -3px;
+}
+
+.close-menu span:nth-child(3){
+    display: none;
+}
+
+.body_fix {
+    overflow: hidden;
+}
+
+.menu-mobile .btn-white{
+    display: none;
+}
+
+.cenozavr-menu{
+    display: none;
+}
+
+@media (max-width: 1020px){
+    .logo{
+        width: 100px;
+    }
+}
+@media (max-width: 767px){
+    .open-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        transition: 0.3s;
+        z-index: 111111;
+        width: 24px;
+        height: 24px;
+    }
+    .open-menu span{
+        display: flex;
+        background: #FBFBFB;
+        width: 17px;
+        height: 2px;
+        transition: 0.3s;
+    }
+
+    .menu-mobile {
+        width: 100%;
+        position: fixed;
+        z-index: 99999;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        height: 100vh;
+        transform: translateX(-100%);
+        transition: all 0.5s ease 0s;
+        background: #101010;
+        transform: translateX(-100%);
+
+    }
+    .transition-menu {
+
+        transform: translateX(0);
+
+    }
+
+    .cenozavr-menu img{
+        width: 100%;
+    }
+    .nav-menu{
+        padding: 152px 20px 20px;
+    }
+    .nav-menu ul {
+        gap: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu-mobile .btn-white {
+        display: flex;
+        margin-left: 20px;
+        margin-top: 25px;
+        min-width: 190px;
+    }
+
+    .cenozavr-menu{
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        max-width: 380px;
+    }
+    header .link-liner {
+        z-index: 999911;
+    }
+    .logo {
+        z-index: 999191;
+    }
+
+}
