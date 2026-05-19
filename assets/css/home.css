@@ -913,6 +913,7 @@ a:hover{
     justify-content: space-between;
     padding: 20px;
     transition: 0.3s;
+    cursor: pointer;
 }
 .questions-box{
     background: #1C1C1C;
